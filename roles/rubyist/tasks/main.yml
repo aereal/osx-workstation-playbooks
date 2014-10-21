@@ -13,3 +13,9 @@
     dest="{{ ruby_build.dest }}"
     recursive=no
     repo="{{ ruby_build.repo }}"
+-
+  name: Install Rubies
+  command: "{{ rbenv.dest }}/bin/rbenv install {{ item.version }}"
+  args:
+    creates: "{{ rbenv.dest }}/versions/{{ item.version }}"
+  with_items: rubies

@@ -36,3 +36,6 @@ homebrew:
     -
       name: zsh
       install_options: --disable-etcdir
+rubies:
+  -
+    version: 2.1.2
