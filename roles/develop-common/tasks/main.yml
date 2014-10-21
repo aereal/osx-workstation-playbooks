@@ -1,0 +1,9 @@
+---
+-
+  name: Install Homebrew
+  git:
+    depth=1
+    dest={{ homebrew.dest }}
+    recursive=no
+    update=no
+    repo={{ homebrew.repo }}

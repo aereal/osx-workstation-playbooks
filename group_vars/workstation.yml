@@ -1,0 +1,4 @@
+---
+homebrew:
+  repo: git://github.com/homebrew/Homebrew.git
+  dest: /opt/homebrew
