@@ -7,3 +7,10 @@
     recursive=no
     update=no
     repo={{ homebrew.repo }}
+-
+  name: Install essential packages from Homebrew
+  homebrew:
+    name={{ item.name }}
+    state={{ item.state | default('present') }}
+    install_options="{{ item.install_options | default('') }}"
+  with_items: homebrew.packages

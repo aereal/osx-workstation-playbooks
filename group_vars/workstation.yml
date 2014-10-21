@@ -2,3 +2,33 @@
 homebrew:
   repo: git://github.com/homebrew/Homebrew.git
   dest: /opt/homebrew
+  packages:
+    -
+      name: coreutils
+    -
+      name: direnv
+    -
+      name: git
+      install_options: --with-brewed-openssl --with-pcre
+    -
+      name: jq
+    -
+      name: pstree
+    -
+      name: reattach-to-user-namespace
+      install_options: --with-launchctl --with-pbcopy-and-pbpaste
+    -
+      name: ssh-copy-id
+    -
+      name: terminal-notifier
+    -
+      name: the_silver_searcher
+    -
+      name: tig
+    -
+      name: tmux
+    -
+      name: wget
+    -
+      name: zsh
+      install_options: --disable-etcdir
