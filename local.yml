@@ -1,0 +1,5 @@
+---
+-
+  hosts: workstation
+  roles:
+    - common
