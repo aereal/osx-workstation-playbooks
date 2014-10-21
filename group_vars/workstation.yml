@@ -1,4 +1,8 @@
 ---
+user:
+  name: aereal
+directories:
+  home: "/Users/{{ user.name }}"
 homebrew:
   repo: git://github.com/homebrew/Homebrew.git
   dest: /opt/homebrew

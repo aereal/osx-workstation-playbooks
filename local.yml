@@ -3,3 +3,4 @@
   hosts: workstation
   roles:
     - develop-common
+    - rubyist

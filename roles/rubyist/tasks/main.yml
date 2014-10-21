@@ -1,0 +1,8 @@
+---
+-
+  name: Install rbenv
+  git:
+    depth=1
+    dest="{{ rbenv.dest }}"
+    recursive=no
+    repo="{{ rbenv.repo }}"
