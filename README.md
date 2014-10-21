@@ -10,6 +10,12 @@
 make
 ```
 
+## How to run tests
+
+```
+make test
+```
+
 ## Directory Structure
 
 Based on [Best Practices](http://docs.ansible.com/playbooks_best_practices.html)
