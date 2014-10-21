@@ -2,5 +2,8 @@
 rbenv:
   dest: "{{ directories.home }}/.anyenv/envs/rbenv"
   repo: git://github.com/sstephenson/rbenv.git
+ruby_build:
+  dest: "{{ rbenv.dest }}/plugins/ruby-build"
+  repo: git://github.com/sstephenson/ruby-build.git
 executable:
   rbenv: "{{ rbenv.dest }}/bin/rbenv"

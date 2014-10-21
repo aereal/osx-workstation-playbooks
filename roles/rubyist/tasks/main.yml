@@ -6,3 +6,10 @@
     dest="{{ rbenv.dest }}"
     recursive=no
     repo="{{ rbenv.repo }}"
+-
+  name: Install ruby-build
+  git:
+    depth=1
+    dest="{{ ruby_build.dest }}"
+    recursive=no
+    repo="{{ ruby_build.repo }}"
