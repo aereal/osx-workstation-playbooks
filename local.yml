@@ -4,3 +4,4 @@
   roles:
     - develop-common
     - rubyist
+    - perl
