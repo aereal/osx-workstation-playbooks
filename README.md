@@ -1,5 +1,7 @@
 # osx-workstation-playbooks
 
+Ansible playbooks for Mac OS X workstation
+
 ## Synopsis
 
 [Install Ansible](http://docs.ansible.com/intro_installation.html)
