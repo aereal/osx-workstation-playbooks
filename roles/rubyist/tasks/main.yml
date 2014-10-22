@@ -14,6 +14,13 @@
     recursive=no
     repo="{{ ruby_build.repo }}"
 -
+  name: Install Ruby's dependencies
+  homebrew:
+    name="{{ item.name }}"
+    state="{{ item.state | default('present') }}"
+    install_options="{{ item.install_options | default('') }}"
+  with_items: ruby.dependencies
+-
   name: Install Rubies
   command: "{{ rbenv.dest }}/bin/rbenv install {{ item.version }}"
   args:

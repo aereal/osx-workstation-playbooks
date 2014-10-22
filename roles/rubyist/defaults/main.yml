@@ -7,3 +7,15 @@ ruby_build:
   repo: git://github.com/sstephenson/ruby-build.git
 executable:
   rbenv: "{{ rbenv.dest }}/bin/rbenv"
+ruby:
+  dependencies:
+    -
+      name: gdbm
+    -
+      name: libyaml
+    -
+      name: libffi
+    -
+      name: openssl
+    -
+      name: readline
