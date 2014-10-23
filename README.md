@@ -4,7 +4,10 @@ Ansible playbooks for Mac OS X workstation
 
 ## Synopsis
 
-[Install Ansible](http://docs.ansible.com/intro_installation.html)
+### Requirements
+
+* [Install Xcode (with Command Line Tools)](https://developer.apple.com/downloads)
+* [Install Ansible](http://docs.ansible.com/intro_installation.html)
 
 ### Run at local
 
