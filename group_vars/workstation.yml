@@ -39,3 +39,6 @@ homebrew:
 rubies:
   -
     version: 2.1.2
+dotfiles:
+  dest: ~/repos/github.com/aereal/dotfiles
+  repo: git://github.com/aereal/dotfiles.git

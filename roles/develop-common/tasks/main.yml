@@ -14,3 +14,8 @@
     state="{{ item.state | default('present') }}"
     install_options="{{ item.install_options | default('') }}"
   with_items: homebrew.packages
+-
+  name: Fetch dotfiles
+  git:
+    dest="{{ dotfiles.dest }}"
+    repo="{{ dotfiles.repo }}"
