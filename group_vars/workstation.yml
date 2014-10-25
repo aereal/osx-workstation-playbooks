@@ -83,6 +83,8 @@ homebrew:
     - name: slate
     - name: karabiner
     - name: xquartz
+    - name: virtualbox
+    - name: boot2docker
 rubies:
   -
     version: 2.1.2
