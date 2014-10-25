@@ -82,6 +82,7 @@ homebrew:
     - name: iterm2
     - name: slate
     - name: karabiner
+    - name: xquartz
 rubies:
   -
     version: 2.1.2
