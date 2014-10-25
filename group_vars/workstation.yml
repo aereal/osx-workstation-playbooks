@@ -85,14 +85,12 @@ homebrew:
     - name: xquartz
     - name: virtualbox
     - name: boot2docker
-rubies:
-  -
-    version: 2.1.2
+ruby_versions:
+  - version: 2.1.2
 perl_versions:
   - version: 5.20.1
 node_versions:
-  -
-    version: 0.10.33
+  - version: 0.10.33
 dotfiles:
   dest: ~/repos/github.com/aereal/dotfiles
   repo: git://github.com/aereal/dotfiles.git
