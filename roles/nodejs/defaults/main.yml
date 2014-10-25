@@ -1,0 +1,7 @@
+---
+ndenv:
+  dest: "{{ directories.home }}/.anyenv/envs/ndenv"
+  repo: git://github.com/riywo/ndenv.git
+node_build:
+  dest: "{{ ndenv.dest }}/plugins/node-build"
+  repo: git://github.com/riywo/node-build.git

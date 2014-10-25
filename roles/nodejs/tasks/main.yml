@@ -1,0 +1,21 @@
+---
+-
+  name: Install ndenv
+  git:
+    depth=1
+    dest="{{ ndenv.dest }}"
+    recursive=no
+    repo="{{ ndenv.repo }}"
+-
+  name: Install node-build
+  git:
+    depth=1
+    dest="{{ node_build.dest }}"
+    recursive=no
+    repo="{{ node_build.repo }}"
+-
+  name: Install stable Node.js
+  command: "{{ ndenv.dest }}/bin/ndenv install {{ item.version }}"
+  args:
+    creates: "{{ ndenv.dest }}/versions/{{ item.version }}"
+  with_items: node_versions
