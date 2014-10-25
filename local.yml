@@ -4,6 +4,7 @@
   roles:
     - develop-common
     - osx-apps
+    - laptop-keyboard
     - rubyist
     - perl
     - nodejs

@@ -4,6 +4,7 @@ user:
 directories:
   home: "/Users/{{ user.name }}"
 karabiner:
+  source_private_xml: '{{ dotfiles.dest }}/osx/keyremap4macbook/private.xml'
   config_dir: "{{ directories.home }}/Library/Application Support/Karabiner"
   command: /Applications/Karabiner.app/Contents/Library/bin/karabiner
   config:

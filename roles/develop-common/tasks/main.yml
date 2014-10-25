@@ -19,14 +19,3 @@
   git:
     dest="{{ dotfiles.dest }}"
     repo="{{ dotfiles.repo }}"
--
-  name: Install private.xml
-  command: mkdir -p "{{ karabiner.config_dir }}" && ln -sf "{{ dotfiles.dest }}/osx/keyremap4macbook/private.xml" "{{ karabiner.config_dir }}/private.xml"
-    creates="{{ karabiner.config_dir }}/private.xml"
--
-  name: Relaod private.xml
-  command: "{{ karabiner.command }} reloadxml"
--
-  name: Configure Karabiner
-  command: "{{ karabiner.command }} set {{ item.name }} {{ item.value }}"
-  with_items: karabiner.config

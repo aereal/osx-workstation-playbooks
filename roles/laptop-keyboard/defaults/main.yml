@@ -1,0 +1,9 @@
+---
+karabiner:
+  source_private_xml: '/Applications/Karabiner.app/Contents/Resources/private.xml'
+  config_dir: '/Library/Application\ Support/Karabiner'
+  command: '/Applications/Karabiner.app/Contents/Library/bin/karabiner'
+  config: # See also `karabiner`
+    -
+      name: repeat.initial_wait
+      value: 200
