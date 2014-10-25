@@ -36,6 +36,12 @@ homebrew:
     -
       name: zsh
       install_options: --disable-etcdir
+  casks:
+    - name: alfred
+    - name: dropbox
+    - name: iterm2
+    - name: slate
+    - name: karabiner
 rubies:
   -
     version: 2.1.2
