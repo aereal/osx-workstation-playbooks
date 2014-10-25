@@ -5,6 +5,44 @@ directories:
   home: "/Users/{{ user.name }}"
 karabiner:
   config_dir: "{{ directories.home }}/Library/Application Support/Karabiner"
+  command: /Applications/Karabiner.app/Contents/Library/bin/karabiner
+  config:
+    -
+      name: notsave.automatically_enable_keyboard_device
+      value: 1
+    -
+      name: notsave.automatically_enable_pointing_device
+      value: 1
+    -
+      name: option.emacsmode_controlM
+      value: 1
+    -
+      name: org.aereal.limechat.move-to-previous-unread-channel
+      value: 1
+    -
+      name: org.aereal.limechat.move-down-channel
+      value: 1
+    -
+      name: org.aereal.limechat.move-up-channel
+      value: 1
+    -
+      name: org.aereal.limechat.move-to-next-unread-channel
+      value: 1
+    -
+      name: org.aereal.sequel-pro.remap-c-h-to-delete
+      value: 1
+    -
+      name: remap.space2shiftL_space_keyrepeat
+      value: 1
+    -
+      name: remap.swapcolons
+      value: 1
+    -
+      name: repeat.initial_wait
+      value: 200
+    -
+      name: repeat.wait
+      value: 35
 homebrew:
   repo: git://github.com/homebrew/Homebrew.git
   dest: /opt/homebrew
