@@ -15,17 +15,6 @@
     install_options="{{ item.install_options | default('') }}"
   with_items: homebrew.packages
 -
-  name: Tap Homebrew Cask
-  homebrew_tap: name=caskroom/cask
--
-  name: Install Homebrew Cask
-  homebrew: name=brew-cask
--
-  name: Install Casks
-  homebrew_cask:
-    name="{{ item.name }}"
-  with_items: homebrew.casks
--
   name: Fetch dotfiles
   git:
     dest="{{ dotfiles.dest }}"

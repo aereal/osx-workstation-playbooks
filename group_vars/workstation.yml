@@ -76,6 +76,7 @@ homebrew:
     -
       name: zsh
       install_options: --disable-etcdir
+osx_apps:
   casks:
     - name: alfred
     - name: dropbox

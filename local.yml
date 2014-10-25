@@ -3,6 +3,7 @@
   hosts: workstation
   roles:
     - develop-common
+    - osx-apps
     - rubyist
     - perl
     - nodejs

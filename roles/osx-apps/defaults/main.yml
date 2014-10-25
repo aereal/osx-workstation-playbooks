@@ -1,0 +1,11 @@
+---
+osx_apps:
+  casks:
+    - name: alfred
+    - name: dropbox
+    - name: iterm2
+    - name: slate
+    - name: karabiner
+    - name: xquartz
+    - name: virtualbox
+    - name: boot2docker
