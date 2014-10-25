@@ -13,3 +13,9 @@
     dest="{{ perl_build.dest }}"
     recursive=no
     repo="{{ perl_build.repo }}"
+-
+  name: Install Perls
+  command: "{{ plenv.dest }}/bin/plenv install {{ item.version }}"
+  args:
+    creates: "{{ plenv.dest }}/versions/{{ item.version }}"
+  with_items: perl_versions

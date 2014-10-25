@@ -88,6 +88,8 @@ homebrew:
 rubies:
   -
     version: 2.1.2
+perl_versions:
+  - version: 5.20.1
 node_versions:
   -
     version: 0.10.33
