@@ -77,6 +77,9 @@ homebrew:
     -
       name: zsh
       install_options: --disable-etcdir
+    - name: autossh
+    - name: hub
+    - name: proctools
 osx_apps:
   casks:
     - name: alfred
