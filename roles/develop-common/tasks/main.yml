@@ -1,5 +1,14 @@
 ---
 -
+  name: Setup Homebrew directory
+  file:
+    path="{{ homebrew.dest }}"
+    mode=0755
+    owner=aereal
+    group=staff
+    state=directory
+  sudo: yes
+-
   name: Install Homebrew
   git:
     depth=1
