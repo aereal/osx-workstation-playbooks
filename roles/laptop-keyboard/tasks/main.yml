@@ -4,8 +4,10 @@
   file: path="{{ karabiner.config_dir }}" state=directory
 -
   name: Install private.xml
-  command: mkdir -p "{{ karabiner.config_dir }}" && ln -sf "{{ karabiner.source_private_xml }}" "{{ karabiner.config_dir }}/private.xml"
-    creates="{{ karabiner.config_dir }}/private.xml"
+  file:
+    path="{{ karabiner.config_dir }}/private.xml"
+    src="{{ karabiner.source_private_xml }}"
+    state=link
 -
   name: Relaod private.xml
   command: "{{ karabiner.command }} reloadxml"
