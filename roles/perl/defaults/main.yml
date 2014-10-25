@@ -1,6 +1,6 @@
 ---
 plenv:
-  dest: "{{ directories.home }}/.anyenv/envs/rbenv"
+  dest: "{{ directories.home }}/.anyenv/envs/plenv"
   repo: git://github.com/tokuhirom/plenv.git
 perl_build:
   dest: "{{ plenv.dest }}/plugins/perl-build"
