@@ -88,7 +88,7 @@ osx_apps:
     - name: virtualbox
     - name: boot2docker
 ruby_versions:
-  - version: 2.1.2
+  - version: 2.1.3
 perl_versions:
   - version: 5.20.1
 node_versions:
