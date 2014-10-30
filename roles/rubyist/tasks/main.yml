@@ -26,3 +26,23 @@
   args:
     creates: "{{ rbenv.dest }}/versions/{{ item.version }}"
   with_items: ruby_versions
+  environment:
+    CC: /usr/bin/clang
+    CXX: /usr/bin/clang++
+    MAKE_OPTS: "-j {{ ansible_processor_cores }}"
+    RUBY_CONFIGURE_OPTS: "
+      --with-arch={{ ansible_architecture }}
+      --with-valgrind
+      --with-out-ext=tk,tk/*
+      --enable-shared
+      --enable-pthread
+      --disable-install-doc
+      --disable-libedit
+      --with-gdbm-dir={{ homebrew.dest }}/opt/gdbm
+      --with-dbm-dir={{ homebrew.dest }}/opt/gdbm
+      --with-dbm-type=gdbm_compat
+      --with-libyaml-dir={{ homebrew.dest }}/opt/libyaml
+      --with-libffi-dir={{ homebrew.dest }}/opt/libffi
+      --with-openssl-dir={{ homebrew.dest }}/opt/openssl
+      --with-readline-dir={{ homebrew.dest }}/opt/readline
+      --with-opt-dir={{ homebrew.dest }}"
