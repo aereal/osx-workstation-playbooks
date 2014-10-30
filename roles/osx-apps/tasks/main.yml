@@ -2,11 +2,17 @@
 -
   name: Tap Homebrew Cask
   homebrew_tap: name=caskroom/cask
+  environment:
+    PATH: "{{ homebrew.dest }}/bin:{{ ansible_env.PATH }}"
 -
   name: Install Homebrew Cask
   homebrew: name=brew-cask
+  environment:
+    PATH: "{{ homebrew.dest }}/bin:{{ ansible_env.PATH }}"
 -
   name: Install Casks
   homebrew_cask:
     name="{{ item.name }}"
   with_items: osx_apps.casks
+  environment:
+    PATH: "{{ homebrew.dest }}/bin:{{ ansible_env.PATH }}"

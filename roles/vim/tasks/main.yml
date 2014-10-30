@@ -4,3 +4,5 @@
   homebrew:
     name="macvim"
     install_options="--with-lua --with-luajit"
+  environment:
+    PATH: "{{ homebrew.dest }}/bin:{{ ansible_env.PATH }}"

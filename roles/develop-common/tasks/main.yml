@@ -24,6 +24,8 @@
     state="{{ item.state | default('present') }}"
     install_options="{{ item.install_options | default('') }}"
   with_items: homebrew.packages
+  environment:
+    PATH: "{{ homebrew.dest }}/bin:{{ ansible_env.PATH }}"
 -
   name: Fetch dotfiles
   git:
