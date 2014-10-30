@@ -16,6 +16,7 @@
     recursive=no
     update=no
     repo="{{ homebrew.repo }}"
+    accept_hostkey=yes
 -
   name: Install essential packages from Homebrew
   homebrew:
