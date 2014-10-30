@@ -16,3 +16,6 @@
   with_items: osx_apps.casks
   environment:
     PATH: "{{ homebrew.dest }}/bin:{{ ansible_env.PATH }}"
+-
+  name: Install Google Chrome
+  command: "{{ homebrew.dest }}/bin/brew cask install --appdir=/Applications google-chrome"
