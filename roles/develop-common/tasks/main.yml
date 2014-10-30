@@ -27,6 +27,9 @@
   environment:
     PATH: "{{ homebrew.dest }}/bin:{{ ansible_env.PATH }}"
 -
+  name: Link brewed applications
+  command: "{{ homebrew.dest }}/bin/brew linkapps"
+-
   name: Fetch dotfiles
   git:
     dest="{{ dotfiles.dest }}"

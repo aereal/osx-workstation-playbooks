@@ -19,3 +19,6 @@
 -
   name: Install Google Chrome
   command: "{{ homebrew.dest }}/bin/brew cask install --appdir=/Applications google-chrome"
+-
+  name: Setup Casks
+  command: "{{ homebrew.dest }}/bin/brew cask alfred link"
