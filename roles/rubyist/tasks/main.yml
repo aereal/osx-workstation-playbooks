@@ -22,7 +22,7 @@
   with_items: ruby.dependencies
 -
   name: Install Rubies
-  command: "{{ rbenv.dest }}/bin/rbenv install {{ item.version }}"
+  command: "{{ rbenv.dest }}/bin/rbenv install --keep {{ item.version }}"
   args:
     creates: "{{ rbenv.dest }}/versions/{{ item.version }}"
   with_items: ruby_versions
