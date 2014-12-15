@@ -34,3 +34,10 @@
   git:
     dest="{{ dotfiles.dest }}"
     repo="{{ dotfiles.repo }}"
+  name: Configure ComputerName
+  command: "scutil --set ComputerName {{ computer_name }}"
+  sudo: yes
+-
+  name: Configure LocalHostName
+  command: "scutil --set LocalHostName {{ local_host_name }}"
+  sudo: yes
