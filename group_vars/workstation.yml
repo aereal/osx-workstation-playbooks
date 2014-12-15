@@ -1,8 +1,6 @@
 ---
 computer_name: Hortensia
 local_host_name: Hortensia
-user:
-  name: aereal
 karabiner:
   source_private_xml: '{{ dotfiles.dest }}/osx/keyremap4macbook/private.xml'
   config_dir: "{{ ansible_env.HOME }}/Library/Application Support/Karabiner"
