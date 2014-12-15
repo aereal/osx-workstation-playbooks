@@ -1,6 +1,6 @@
 ---
 plenv:
-  dest: "{{ directories.home }}/.plenv"
+  dest: "{{ ansible_env.HOME }}/.plenv"
   repo: git://github.com/tokuhirom/plenv.git
 perl_build:
   dest: "{{ plenv.dest }}/plugins/perl-build"

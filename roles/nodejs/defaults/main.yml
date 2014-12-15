@@ -1,6 +1,6 @@
 ---
 ndenv:
-  dest: "{{ directories.home }}/.ndenv"
+  dest: "{{ ansible_env.HOME }}/.ndenv"
   repo: git://github.com/riywo/ndenv.git
 node_build:
   dest: "{{ ndenv.dest }}/plugins/node-build"

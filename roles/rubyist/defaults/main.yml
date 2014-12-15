@@ -1,6 +1,6 @@
 ---
 rbenv:
-  dest: "{{ directories.home }}/.rbenv"
+  dest: "{{ ansible_env.HOME }}/.rbenv"
   repo: git://github.com/sstephenson/rbenv.git
 ruby_build:
   dest: "{{ rbenv.dest }}/plugins/ruby-build"
