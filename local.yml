@@ -3,6 +3,7 @@
   hosts: workstation
   roles:
     - develop-common
+    - osx-defaults
     - osx-apps
     - laptop-keyboard
     - rubyist
