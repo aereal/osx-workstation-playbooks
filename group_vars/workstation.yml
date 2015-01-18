@@ -90,7 +90,7 @@ osx_apps:
     - name: boot2docker
     - name: smcfancontrol
 ruby_versions:
-  - version: 2.1.3
+  - version: 2.2.0
 perl_versions:
   - version: 5.20.1
 node_versions:
