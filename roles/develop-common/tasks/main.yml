@@ -1,5 +1,10 @@
 ---
 -
+  name: Check Homebrew installation
+  stat:
+    path="{{ homebrew.dest }}"
+  register: homebrew_install
+-
   name: Setup Homebrew directory
   file:
     path="{{ homebrew.dest }}"
@@ -8,6 +13,7 @@
     group=staff
     state=directory
   sudo: yes
+  when: homebrew_install.stat.isdir is not defined or not homebrew_install.stat.isdir
 -
   name: Install Homebrew
   git:
@@ -15,6 +21,7 @@
     recursive=no
     repo="{{ homebrew.repo }}"
     accept_hostkey=yes
+  when: homebrew_install.stat.isdir is not defined or not homebrew_install.stat.isdir
 -
   name: Install essential packages from Homebrew
   homebrew:
