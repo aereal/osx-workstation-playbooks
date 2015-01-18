@@ -48,7 +48,7 @@ def main():
             name=dict(required=True, type='str'),
             state=dict(required=False, type='str', default='present'), # present or absent
             domain=dict(required=True, type='str'),
-            type=dict(required=True, type='str'),
+            type=dict(required=False, type='str', default = 'string'),
             value=dict(required=True, type='str'),
         ),
     )
