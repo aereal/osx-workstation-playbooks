@@ -34,6 +34,8 @@
   git:
     dest="{{ dotfiles.dest }}"
     repo="{{ dotfiles.repo }}"
+    update=no
+-
   name: Configure ComputerName
   command: "scutil --set ComputerName {{ computer_name }}"
   sudo: yes
