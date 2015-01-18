@@ -1,0 +1,19 @@
+---
+-
+  name: Configure Dock
+  defaults:
+    domain={{item.domain}}
+    name={{item.name}}
+    type={{item.type|default('string')}}
+    value={{item.value}}
+  with_items: osx_defaults.dock
+  notify: restart Dock
+-
+  name: Configure Finder
+  defaults:
+    domain={{item.domain}}
+    name={{item.name}}
+    type={{item.type|default('string')}}
+    value={{item.value}}
+  with_items: osx_defaults.finder
+  notify: restart Finder

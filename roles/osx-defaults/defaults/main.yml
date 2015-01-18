@@ -1,0 +1,46 @@
+---
+osx_defaults:
+  dock:
+    - domain: com.apple.dock
+      name: autohide
+      type: bool
+      value: true
+    - domain: com.apple.dock
+      name: autohide-delay
+      type: float
+      value: 0
+    - domain: com.apple.dock
+      name: mineffect
+      value: scale
+    - domain: com.apple.dock
+      name: minimize-to-application
+      type: bool
+      value: true
+    - domain: com.apple.dock
+      name: showhidden
+      type: bool
+      value: true
+    - domain: com.apple.dock
+      name: mouse-over-hilite-stack
+      type: bool
+      value: true
+    - domain: com.apple.dock
+      name: expose-animation-duration
+      type: float
+      value: 0.1
+  finder:
+    - domain: -g
+      name: AppleShowAllExtensions
+      type: bool
+      value: true
+    - domain: com.apple.finder
+      name: AppleShowAllFiles
+      type: bool
+      value: true
+    - domain: com.apple.finder
+      name: ShowPathBar
+      type: bool
+      value: true
+    - domain: com.apple.finder
+      name: FXPreferredViewStyle
+      value: 'Nslv'
